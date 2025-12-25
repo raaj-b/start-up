@@ -2,12 +2,12 @@ import React from "react";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { BiCart } from "react-icons/bi";
 import { CiUser } from "react-icons/ci";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <header className="w-full border-b bg-white sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-        
+
         {/* Logo */}
         <div className="flex items-center">
           <h1 className="text-2xl font-bold text-gray-800 tracking-wide cursor-pointer">
@@ -26,21 +26,29 @@ function Navbar() {
 
         {/* Icons */}
         <div className="flex items-center gap-5 text-gray-700">
-          <button className="hover:text-blue-600 transition text-xl">
-            <MdOutlineFavoriteBorder />
-          </button>
+          <Link
+            to="/wishlist">
+            <button className="hover:text-blue-600 transition text-xl">
+              <MdOutlineFavoriteBorder />
+            </button>
+          </Link>
 
-          <button className="hover:text-blue-600 transition text-xl relative">
-            <BiCart />
-            {/* Cart Badge */}
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full">
-              2
-            </span>
-          </button>
-
+          <Link
+            to='/cart'>
+            <button className="hover:text-blue-600 transition text-xl relative">
+              <BiCart />
+              {/* Cart Badge */}
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full">
+                2
+              </span>
+            </button>
+          </Link>
+          <Link
+          to='/sign-up'>
           <button className="hover:text-blue-600 transition text-xl">
             <CiUser />
           </button>
+          </Link>
         </div>
       </nav>
 
