@@ -9,6 +9,8 @@ import mens
 import women from "../assets/women.png"
 import foot from "../assets/running-shoe.png"
 import under from "../assets/underwear.png"
+import electronics from "../assets/plug.png"
+import grocery from "../assets/shopping.png"
 function CategorySection() {
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -25,10 +27,19 @@ function CategorySection() {
       ),
     },
     {
+      name: "Grocery", icon: (
+        <img
+          src={grocery}
+          alt="Kids Wear"
+          className="w-6 h-6"
+        />
+      )
+    },
+    {
       name: "Kids Wear", icon: (
         <img
           src={kids}
-          alt="All Categories"
+          alt="Kids Wear"
           className="w-6 h-6"
         />
       )
@@ -38,7 +49,7 @@ function CategorySection() {
         (
           <img
             src={mens}
-            alt="All Categories"
+            alt="Men's Wear"
             className="w-6 h-6"
           />
         )
@@ -50,7 +61,17 @@ function CategorySection() {
         (
           <img
             src={women}
-            alt="All Categories"
+            alt="Women's Wear"
+            className="w-6 h-6"
+          />
+        )
+    },
+    {
+      name: "Electronics", icon:
+        (
+          <img
+            src={electronics}
+            alt="Women's Wear"
             className="w-6 h-6"
           />
         )
@@ -90,7 +111,7 @@ function CategorySection() {
               {/* <BiCategory className="text-lg" /> */}
               <img
                 src={under}
-                alt="All Categories"
+                alt="Under Garments"
                 className="w-6 h-6"
 
               />
@@ -122,7 +143,7 @@ function CategorySection() {
               {/* <BiCategory className="text-lg" /> */}
               <img
                 src={foot}
-                alt="All Categories"
+                alt="Footwear"
                 className="w-6 h-6"
 
               />
