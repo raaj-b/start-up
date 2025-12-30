@@ -6,6 +6,11 @@ import jacket from "../assets/jacket.png";
 import combo from "../assets/combo.png";
 import { CiStar } from "react-icons/ci";
 import { useNavigate } from 'react-router-dom';
+import { IoIosArrowForward } from "react-icons/io";
+import Clothes from "../components/Clothes"
+import Grocery from "./Grocery";
+import Electronics from "./Electronics";
+import Footwear from "./Footwear";
 function Products() {
     const navigate = useNavigate();
     const products = [
@@ -52,60 +57,16 @@ function Products() {
     ];
 
     return (
-        <section className="w-full bg-gray-50 py-10">
-            <div className="max-w-7xl mx-auto px-4">
-                {/* Section Heading */}
-                <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-2xl font-bold text-gray-800">
-                        Featured Products
-                    </h2>
-                    {/* <button className="text-sm text-blue-600 hover:underline">
-                        View All
-                    </button> */}
-                </div>
-
-                {/* Product Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-                    {products.map((item) => (
-                        <div
-                            key={item.id}
-                            className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer"
-                            onClick={() => navigate(`/product`)}
-                        >
-                            {/* Image */}
-                            <div className="relative w-full aspect-square bg-gray-100 overflow-hidden rounded-t-2xl">
-                                <img
-                                    src={item.img}
-                                    alt={item.name}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                                />
-                            </div>
-
-                            {/* Content */}
-                            <div className="p-4">
-                                <h3 className="text-sm font-medium text-gray-800 line-clamp-1">
-                                    {item.name}
-                                </h3>
-
-                                <p className="text-xs text-gray-500 mt-1">
-                                    {item.shopName}
-                                </p>
-
-                                <div className="flex items-center justify-between mt-3">
-                                    <span className="text-lg font-semibold text-gray-900">
-                                        {item.price}
-                                    </span>
-
-                                    <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-green-600 text-white text-xs">
-                                        <CiStar /> {item.rating}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </section>
+        <>
+            {/* Clothes products */}
+            <Clothes/>
+            {/* Grocery products */}
+           <Grocery/>
+            {/* Electronics products */}
+            <Electronics/>
+            {/* Footwear products */}
+            <Footwear/>
+        </>
     );
 }
 
