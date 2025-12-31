@@ -15,17 +15,17 @@ function CategorySection() {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const categories = [
-    {
-      name: "All Category",
-      icon: (
-        <img
-          src={tag}
-          alt="All Categories"
-          className="w-6 h-6"
+    // {
+    //   name: "All Category",
+    //   icon: (
+    //     <img
+    //       src={tag}
+    //       alt="All Categories"
+    //       className="w-6 h-6"
 
-        />
-      ),
-    },
+    //     />
+    //   ),
+    // },
     {
       name: "Grocery", icon: (
         <img
@@ -77,15 +77,44 @@ function CategorySection() {
         )
     },
   ];
+  const allCategory = ["Grocery", "Kids Wear", "Men's Wear", "Women's Wear", "Electronics"];
 
   const underGarments = ["Innerwear", "Briefs", "Boxers", "Bras", "Panties"];
   const footwear = ["Sneakers", "Sandals", "Slippers", "Formal Shoes"];
-
   return (
     <section className="w-full bg-white border-b">
       <div className="max-w-7xl mx-auto px-4">
         <ul className="flex items-center gap-6 py-3 text-sm font-medium text-gray-700">
+          <li
+            className="relative"
+            onMouseEnter={() => setOpenDropdown("all")}
+            onMouseLeave={() => setOpenDropdown(null)}
+          >
+            <div className="flex items-center gap-1 cursor-pointer hover:text-blue-600 transition whitespace-nowrap">
+              {/* <BiCategory className="text-lg" /> */}
+              <img
+                src={tag}
+                alt="All Category"
+                className="w-6 h-6"
 
+              />
+              <span>All Category</span>
+              <BiChevronDown />
+            </div>
+
+            {openDropdown === "all" && (
+              <ul className="absolute top-full mt-2 left-0 bg-white shadow-xl rounded-lg border w-48 z-50 overflow-hidden">
+                {allCategory.map((item) => (
+                  <li
+                    key={item}
+                    className="px-4 py-2 hover:bg-blue-50 hover:text-blue-600 cursor-pointer transition"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
           {/* Static Categories */}
           {categories.map((cat) => (
             <li

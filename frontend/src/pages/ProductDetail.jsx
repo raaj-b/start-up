@@ -5,7 +5,7 @@ import sari from "../assets/sari.png";
 import shoes from "../assets/shoes.png";
 import jacket from "../assets/jacket.png";
 import Navbar from "../components/Navbar";
-
+import { Link } from "react-router-dom";
 function ProductDetail() {
     const images = [tshirt, sari, shoes, jacket];
     const [activeImg, setActiveImg] = useState(images[0]);
@@ -111,13 +111,17 @@ function ProductDetail() {
 
                             {/* Actions */}
                             <div className="flex gap-4 mt-6">
-                                <button className="flex-1 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
+                                {/* Add to Cart button - often a standard button for adding functionality */}
+                                <button className="flex-1 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition" onClick={() => {/* Add cart logic here */ }}>
                                     Add to Cart
                                 </button>
-                                <button className="flex-1 py-3 rounded-xl border border-gray-300 hover:bg-gray-100 transition">
+
+                                {/* Buy Now button - a link to the checkout page */}
+                                <Link to="/check-out" className="flex-1 py-3 rounded-xl border border-gray-300 hover:bg-gray-100 transition text-center">
                                     Buy Now
-                                </button>
+                                </Link>
                             </div>
+
                         </div>
                     </div>
 
