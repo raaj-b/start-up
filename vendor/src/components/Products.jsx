@@ -1,12 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { IoMdAdd } from "react-icons/io";
+import { FaRegEdit } from "react-icons/fa";
 function Products() {
   return (
     <div>
       <h1 className="text-xl font-bold mb-4">Products</h1>
 
-      <Link to="/create-product" className="mb-4 px-4 py-2 bg-blue-600 text-white rounded-xl">
-        Add Product
+      <Link to="/create-product" className="flex mb-4 px-4 py-2 bg-blue-600 text-white rounded-xl w-[150px]">
+         <IoMdAdd className='m-auto'/>Add Product 
       </Link>
 
       <div className="bg-white rounded-xl p-4 shadow-sm">
@@ -25,7 +27,7 @@ function Products() {
               <td className="text-center">₹999</td>
               <td className="text-center">23</td>
               <td className="text-center">
-                <button className="text-blue-600 mr-3">Edit</button>
+                <button className="text-blue-600 mr-6">Edit</button>
                 <button className="text-red-500">Delete</button>
               </td>
             </tr>
