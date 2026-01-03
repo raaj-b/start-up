@@ -82,7 +82,7 @@ function CategorySection() {
   const underGarments = ["Innerwear", "Briefs", "Boxers", "Bras", "Panties"];
   const footwear = ["Sneakers", "Sandals", "Slippers", "Formal Shoes"];
   return (
-    <section className="w-full bg-white border-b">
+    <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <ul className="flex items-center gap-6 py-3 text-sm font-medium text-gray-700">
           <li

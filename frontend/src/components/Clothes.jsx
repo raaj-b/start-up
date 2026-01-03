@@ -32,7 +32,7 @@ function Clothes() {
                 id: 3,
                 name: "Paint",
                 price: "₹999",
-                img: shoes,
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPTecNuf5Zjw4DJsPKmWvQnYIqcx-gv5CPyQ&s",
                 shopName: "Fashion Store",
                 rating: 4.5,
             },

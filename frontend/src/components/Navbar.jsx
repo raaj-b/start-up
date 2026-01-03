@@ -5,13 +5,13 @@ import { CiUser } from "react-icons/ci";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <header className="w-full border-b bg-white sticky top-0 z-50">
+    <header className="w-full bg-[#0C73EB] sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
 
         {/* Logo */}
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-gray-800 tracking-wide cursor-pointer">
-            E<span className="text-blue-600">Commerce</span>
+          <h1 className="text-2xl font-bold text-[#ffffff] tracking-wide cursor-pointer">
+            E<span className="text-[#ffffff]">Commerce</span>
           </h1>
         </div>
 
@@ -20,22 +20,22 @@ function Navbar() {
           <input
             type="search"
             placeholder="Search products..."
-            className="w-full rounded-full border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500 transition"
+            className="bg-[#ffffff] w-full rounded-full border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-blue-500 transition"
           />
         </div>
 
         {/* Icons */}
-        <div className="flex items-center gap-5 text-gray-700">
+        <div className="flex items-center gap-5 text-[#ffffff]-700">
           <Link
             to="/wishlist">
-            <button className="hover:text-blue-600 transition text-xl">
+            <button className="hover:text-[#ffffff] transition text-xl">
               <MdOutlineFavoriteBorder />
             </button>
           </Link>
 
           <Link
             to='/cart'>
-            <button className="hover:text-blue-600 transition text-xl relative">
+            <button className="hover:text-[#ffffff] transition text-xl relative">
               <BiCart />
               {/* Cart Badge */}
               <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded-full">
@@ -45,7 +45,7 @@ function Navbar() {
           </Link>
           <Link
           to='/sign-up'>
-          <button className="hover:text-blue-600 transition text-xl">
+          <button className="hover:text-[#ffffff] transition text-xl">
             <CiUser />
           </button>
           </Link>
@@ -57,7 +57,7 @@ function Navbar() {
         <input
           type="search"
           placeholder="Search..."
-          className="w-full rounded-full border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="bg-[#ffffff] w-full rounded-full border border-gray-300 px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
     </header>
