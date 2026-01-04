@@ -25,7 +25,7 @@ function Navbar() {
         </div>
 
         {/* Icons */}
-        <div className="flex items-center gap-5 text-[#ffffff]-700">
+        <div className="flex items-center gap-5 text-[#ffffff]">
           <Link
             to="/wishlist">
             <button className="hover:text-[#ffffff] transition text-xl">

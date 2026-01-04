@@ -8,61 +8,62 @@ import combo from "../assets/combo.png";
 import { CiStar } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
 
-function Footwear() {
+function Popular() {
     const navigate = useNavigate();
 
-     const products = [
-            {
-                id: 1,
-                name: "Sneakers",
-                price: "₹999",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwj4d2Km8DLRqftw55eQHEYAMYe9p33ljOew&s",
-                shopName: "New Shop",
-                rating: 4.5,
-            },
-            {
-                id: 2,
-                name: "Boots",
-                price: "₹1,299",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSLKNlm_R4A1HnngnupQAdT2It9s8kL1jcNg&s",
-                shopName: "Fashion Hub",
-                rating: 4.5,
-            },
-            {
-                id: 3,
-                name: "Sandals",
-                price: "₹999",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7KCGeISnII51ftFEdNIpevKXJbtOvgjF3zA&s",
-                shopName: "Footwear Store",
-                rating: 4.5,
-            },
-            {
-                id: 4,
-                name: "Heels",
-                price: "₹1,299",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIILzep3QXvlUfzQ72wUsHMdaoLrT-4h3yPA&s",
-                shopName: "Winter Wear",
-                rating: 4.5,
-            },
-            {
-                id: 5,
-                name: "Running Shoes",
-                price: "₹500",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttqFLB3VKpdWNRRX5DFkZVLFN3Hyiol05Mw&s",
-                shopName: "Combo Deals",
-                rating: 4.5,
-            },
-        ];
+    const products = [
+        {
+            id: 1,
+            name: "Men's T-shirt",
+            price: "₹999",
+            img: tshirt,
+            shopName: "New Shop",
+            rating: 4.5,
+        },
+        {
+            id: 2,
+            name: "Soap",
+            price: "₹1,299",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIks7fUDL4CsFf6GvWiws_Nn5Lv8tEcoFlQ&s",
+            shopName: "Fashion Hub",
+            rating: 4.5,
+        },
+        {
+            id: 3,
+            name: "Mixer",
+            price: "₹999",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4prEvnCNRokYmFPzGGmQ1FJVdThFkuH3TQ&s",
+            shopName: "Footwear Store",
+            rating: 4.5,
+        },
+        {
+            id: 4,
+            name: "Heels",
+            price: "₹1,299",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIILzep3QXvlUfzQ72wUsHMdaoLrT-4h3yPA&s",
+            shopName: "Winter Wear",
+            rating: 4.5,
+        },
+        {
+            id: 5,
+            name: "T-shirt Combo",
+            price: "₹500",
+            img: combo,
+            shopName: "Combo Deals",
+            rating: 4.5,
+        },
+    ];
     return (
         <>
-         <section className="w-full bg-gray-50 py-10">
+            {/* Clothes products */}
+            <section className="w-full bg-gray-50 py-10">
                 <div className="max-w-7xl mx-auto px-4">
                     {/* Section Heading */}
                     {/* <div className="flex items-center justify-between mb-6">
                         <h2 className="text-2xl font-bold text-gray-800">
-                            Footwear Products
+                            Popular Products
                         </h2>
-                        <button className="text-sm text-blue-600 hover:underline">
+                        <button className="flex text-sm text-blue-600 hover:underline">
                             <IoIosArrowForward />
                         </button>
                     </div> */}
@@ -110,7 +111,7 @@ function Footwear() {
                 </div>
             </section>
         </>
-        )
+    )
 }
 
-export default Footwear;
+export default Popular;

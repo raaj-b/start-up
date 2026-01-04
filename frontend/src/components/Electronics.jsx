@@ -52,14 +52,14 @@ function Electronics() {
         <section className="w-full bg-gray-50 py-10">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Section Heading */}
-                <div className="flex items-center justify-between mb-6">
+                {/* <div className="flex items-center justify-between mb-6">
                     <h2 className="text-2xl font-bold text-gray-800">
                         Electronics Products
                     </h2>
                     <button className="text-sm text-blue-600 hover:underline">
                         <IoIosArrowForward />
                     </button>
-                </div>
+                </div> */}
 
                 {/* Product Grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
