@@ -9,48 +9,48 @@ import { CiStar } from "react-icons/ci";
 import { IoIosArrowForward } from "react-icons/io";
 
 function Grocery() {
-     const products = [
-                {
-                    id: 1,
-                    name: "Coffe",
-                    price: "₹999",
-                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzTmltSFqu0I8B_L70xwq8lBQ4q2YNqE5sw&s",
-                    shopName: "New Shop",
-                    rating: 4.5,
-                },
-                {
-                    id: 2,
-                    name: "Soap",
-                    price: "₹1,299",
-                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIks7fUDL4CsFf6GvWiws_Nn5Lv8tEcoFlQ&s",
-                    shopName: "Fashion Hub",
-                    rating: 4.5,
-                },
-                {
-                    id: 3,
-                    name: "Brown Sugar",
-                    price: "₹999",
-                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbA268sOke-3z0K7aAQ7AME2oC6C1lu5M7LQ&s",
-                    shopName: "Footwear Store",
-                    rating: 4.5,
-                },
-                {
-                    id: 4,
-                    name: "Refind Oil",
-                    price: "₹1,299",
-                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_04bqckzjiG0evETd3FP2GXzbMxnn5vk3g&s",
-                    shopName: "Winter Wear",
-                    rating: 4.5,
-                },
-                {
-                    id: 5,
-                    name: "Salt",
-                    price: "₹500",
-                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uOi3EzO0bdbK2dcZuPrqdaWoOhritS80pQ&s",
-                    shopName: "Combo Deals",
-                    rating: 4.5,
-                },
-            ];
+    const products = [
+        {
+            id: 1,
+            name: "Coffe",
+            price: "₹999",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzTmltSFqu0I8B_L70xwq8lBQ4q2YNqE5sw&s",
+            shopName: "New Shop",
+            rating: 4.5,
+        },
+        {
+            id: 2,
+            name: "Soap",
+            price: "₹1,299",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIks7fUDL4CsFf6GvWiws_Nn5Lv8tEcoFlQ&s",
+            shopName: "Fashion Hub",
+            rating: 4.5,
+        },
+        {
+            id: 3,
+            name: "Brown Sugar",
+            price: "₹999",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbA268sOke-3z0K7aAQ7AME2oC6C1lu5M7LQ&s",
+            shopName: "Footwear Store",
+            rating: 4.5,
+        },
+        {
+            id: 4,
+            name: "Refind Oil",
+            price: "₹1,299",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_04bqckzjiG0evETd3FP2GXzbMxnn5vk3g&s",
+            shopName: "Winter Wear",
+            rating: 4.5,
+        },
+        {
+            id: 5,
+            name: "Salt",
+            price: "₹500",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5uOi3EzO0bdbK2dcZuPrqdaWoOhritS80pQ&s",
+            shopName: "Combo Deals",
+            rating: 4.5,
+        },
+    ];
     return (
         <>
             {/* Grocery products */}

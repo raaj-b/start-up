@@ -15,12 +15,12 @@ function GroceryList() {
     ];
 
     const products = [
-        { id: 1, name: "Fresh Apples", price: "₹120/kg", rating: 4.5, category: "Fruits" },
-        { id: 2, name: "Bananas", price: "₹60/dozen", rating: 4.4, category: "Fruits" },
-        { id: 3, name: "Tomatoes", price: "₹40/kg", rating: 4.2, category: "Vegetables" },
-        { id: 4, name: "Potato Chips", price: "₹50", rating: 4.6, category: "Snacks" },
-        { id: 5, name: "Milk Packet", price: "₹55", rating: 4.3, category: "Dairy" },
-        { id: 6, name: "Cold Drink", price: "₹40", rating: 4.1, category: "Beverages" },
+        { id: 1, name: "Fresh Apples", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8n5vE9jf4LDuJOLSkL5vkWhcYMbDVs3BDVQ&s", price: "₹120/kg", rating: 4.5, category: "Fruits" },
+        { id: 2, name: "Bananas", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9MuSx--HRWN9bDB25HdO8MSu_aKKYRDvoA&s", price: "₹60/dozen", rating: 4.4, category: "Fruits" },
+        { id: 3, name: "Tomatoes", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9EDk4JAZ7zNrRxOElUZOqjk5_PqARGR_lg&s", price: "₹40/kg", rating: 4.2, category: "Vegetables" },
+        { id: 4, name: "Potato Chips", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2msZ58XRh5TuM-zlVqaok3UTbE3G9HblpQ&s", price: "₹50", rating: 4.6, category: "Snacks" },
+        { id: 5, name: "Milk Packet", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBQQh2T6OSpRcmwpGT8zUhvcwJVjxmCHoNQ&s", price: "₹55", rating: 4.3, category: "Dairy" },
+        { id: 6, name: "Cold Drink", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjmS9JsoWYSyh6q2Pv09hcUv6zQfPDhin_Tg&s", price: "₹40", rating: 4.1, category: "Beverages" },
     ];
 
     const filteredProducts =
@@ -73,15 +73,19 @@ function GroceryList() {
                             >
                                 {/* Image placeholder */}
                                 <div className="bg-gray-100 h-32 rounded-xl mb-3 flex items-center justify-center text-gray-400 text-sm">
-                                    Image
+                                    <img
+                                        src={item.img}
+                                        alt={item.name}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                    />
                                 </div>
 
                                 <h3 className="text-sm font-medium text-gray-800 line-clamp-1">
                                     {item.name}
                                 </h3>
 
-                                <div className="flex items-center gap-1 text-xs text-gray-500 mt-1">
-                                    <CiStar className="text-yellow-500" />
+                                <div className="flex items-center gap-1 text-xs px-3 py-1 w-1/4 rounded-full bg-green-600 text-white mt-1">
+                                    <CiStar className="text-white" />
                                     {item.rating}
                                 </div>
 
@@ -90,9 +94,9 @@ function GroceryList() {
                                         {item.price}
                                     </span>
 
-                                    <button className="text-xs px-3 py-1 rounded-full bg-green-600 text-white hover:bg-green-700 transition">
+                                    {/* <button className="text-xs px-3 py-1 rounded-full bg-green-600 text-white hover:bg-green-700 transition">
                                         Buy
-                                    </button>
+                                    </button> */}
                                 </div>
                             </div>
                         ))}
