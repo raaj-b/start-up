@@ -10,6 +10,8 @@ import women from "../assets/women.png";
 import electronics from "../assets/plug.png";
 import under from "../assets/underwear.png";
 import foot from "../assets/running-shoe.png";
+import home from "../assets/home.png"
+import eco from "../assets/eco.png"
 
 function CategorySection() {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -17,13 +19,17 @@ function CategorySection() {
 
   const categories = [
     { name: "All Category", icon: tag, action: "all" },
-    { name: "Grocery", icon: grocery, route: "/grocery" },
     { name: "Kids Wear", icon: kids, route: "/kids" },
     { name: "Men's Wear", icon: mens, route: "/mens" },
     { name: "Women's Wear", icon: women, route: "/women" },
+    { name: "Personal Care", icon: grocery, route: "/grocery" },
     { name: "Electronics", icon: electronics, route: "/electronics" },
     { name: "Innerwear", icon: under, route: "/innerwear" },
     { name: "Footwear", icon: foot, route: "/footwear" },
+    { name: "Home Decor & Gifting", icon: home, route: "/footwear" },
+    { name: "Eco-Friendly Store", icon: eco, route: "/footwear" },
+
+
   ];
 
   const handleClick = (cat) => {
@@ -39,7 +45,7 @@ function CategorySection() {
       {/* TOP CATEGORY BAR */}
       <section className="w-full bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <ul className="flex items-center gap-6 py-3 text-sm font-medium text-gray-700 overflow-x-auto">
+          <ul className="flex items-center gap-15 py-3 text-sm font-medium text-gray-700 overflow-x-auto">
 
             {categories.map((cat) => (
               <li

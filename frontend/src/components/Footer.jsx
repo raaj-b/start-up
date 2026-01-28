@@ -19,11 +19,35 @@ function Footer() {
                             prices. Shop smart, shop fast, and enjoy secure payments.
                         </p>
                     </div>
-
+<div>
+                        <h3 className="text-lg font-semibold text-white mb-3">
+                            Shop
+                        </h3>
+                        <ul className="space-y-2 text-sm">
+                            <li className="hover:text-blue-400 cursor-pointer transition">
+                                All Products
+                            </li>
+                            <li className="hover:text-blue-400 cursor-pointer transition">
+                                Fashion
+                            </li>
+                            <li className="hover:text-blue-400 cursor-pointer transition">
+                                Electronics
+                            </li>
+                            <li className="hover:text-blue-400 cursor-pointer transition">
+                                Home Decor & Gifting
+                            </li>
+                            <li className="hover:text-blue-400 cursor-pointer transition">
+                                Eco-Friendly Products
+                            </li>
+                            <li className="hover:text-blue-400 cursor-pointer transition">
+                                Electronics
+                            </li>
+                        </ul>
+                    </div>
                     {/* Quick Links */}
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-3">
-                            Quick Links
+                            Legal
                         </h3>
                         <ul className="space-y-2 text-sm">
                             <li className="hover:text-blue-400 cursor-pointer transition">
@@ -41,7 +65,7 @@ function Footer() {
                     {/* Support */}
                     <div>
                         <h3 className="text-lg font-semibold text-white mb-3">
-                            Help
+                            Customer Service
                         </h3>
                         <ul className="space-y-2 text-sm">
                             <li className="hover:text-blue-400 cursor-pointer transition">
